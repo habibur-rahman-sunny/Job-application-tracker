@@ -45,17 +45,21 @@
       <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
         <div class="bg-white p-6 rounded-xl shadow">
           <p class="text-gray-500">Total</p>
-          <h2  id="total-section" class="text-2xl font-bold">0</h2>
+          <h2 id="total-section" class="text-2xl font-bold">0</h2>
         </div>
 
         <div class="bg-white p-6 rounded-xl shadow">
-          <p  class="text-gray-500">Interview</p>
-          <h2 id="interview-section" class="text-2xl font-bold text-teal-600">0</h2>
+          <p class="text-gray-500">Interview</p>
+          <h2 id="interview-section" class="text-2xl font-bold text-teal-600">
+            0
+          </h2>
         </div>
 
         <div class="bg-white p-6 rounded-xl shadow">
-          <p  class="text-gray-500">Rejected</p>
-          <h2 id="rejected-section" class="text-2xl font-bold text-red-500">0</h2>
+          <p class="text-gray-500">Rejected</p>
+          <h2 id="rejected-section" class="text-2xl font-bold text-red-500">
+            0
+          </h2>
         </div>
       </div>
 
@@ -92,61 +96,332 @@
 
       <main id="cards-section">
         <!-- All cards container -->
-      <div id="all-container" class=" all-card-container flex flex-col gap-4">
-        <!-- Job Card-1 --> 
-        <div id="job-card"
-          class="Card bg-white p-6 rounded-xl shadow border mb-6 flex justify-between"
-        >
-          <!-- Left Side -->
-          <div>
-            <h3 class="text-lg font-semibold">Mobile First Corp</h3>
-            <p class="text-gray-600">React Native Developer</p>
+        <div id="all-container" class="all-card-container flex flex-col gap-4">
+          <!-- Job Card-1 -->
+          <div
+            id="job-card"
+            class="Card bg-white p-6 rounded-xl shadow border mb-6 flex justify-between"
+          >
+            <!-- Left Side -->
+            <div>
+              <h3 class="text-lg font-semibold">Mobile First Corp</h3>
+              <p class="text-gray-600">React Native Developer</p>
 
-            <p class="text-sm text-gray-500 mt-1">
-              chittagong , Full-time , $130,000 - $175,000
-            </p>
+              <p class="text-sm text-gray-500 mt-1">
+                chittagong , Full-time , $130,000 - $175,000
+              </p>
 
-            <!-- Status -->
-            <span  class="Status badge badge-outline mt-2">Not Applied</span>
+              <!-- Status -->
+              <span class="Status badge badge-outline mt-2">Not Applied</span>
 
-            <p class="text-gray-600 mt-3 text-sm">
-              Build cross-platform mobile applications using React Native. Work
-              on products used by millions of users worldwide.
-            </p>
+              <p class="text-gray-600 mt-3 text-sm">
+                Build cross-platform mobile applications using React Native.
+                Work on products used by millions of users worldwide.
+              </p>
 
-            <!-- Action Buttons -->
-            <div class="flex gap-3 mt-4">
-              <button id="interview-btn" class="interview btn btn-sm btn-success btn-outline">
-                Interview
+              <!-- Action Buttons -->
+              <div class="flex gap-3 mt-4">
+                <button
+                  id="interview-btn"
+                  class="interview btn btn-sm btn-success btn-outline"
+                >
+                  Interview
+                </button>
+                <button
+                  id="reject-btn"
+                  class="reject btn btn-sm btn-error btn-outline"
+                >
+                  Rejected
+                </button>
+              </div>
+            </div>
+
+            <!-- Delete Button -->
+            <div class="flex items-start">
+              <button id="delete-btn" class="delete btn btn-circle btn-outline">
+                <i class="delete fa-solid fa-trash"></i>
               </button>
-              <button id="reject-btn" class="reject btn btn-sm btn-error btn-outline">Rejected</button>
             </div>
           </div>
 
-          <!-- Delete Button -->
-          <div class="flex items-start">
-            <button id="delete-btn" class="delete btn btn-circle btn-outline">
-              <i class="delete fa-solid fa-trash"></i>
-            </button>
+          <!-- Job Card-2 -->
+          <div
+            id="job-card"
+            class="Card bg-white p-6 rounded-xl shadow border mb-6 flex justify-between"
+          >
+            <div>
+              <h3 class="text-lg font-semibold">WebFlow Agency</h3>
+              <p class="text-gray-600">Web Designer & Developer</p>
+
+              <p class="text-sm text-gray-500 mt-1">
+                Gazipur, Dhaka , Part-time , $80,000 - $120,000
+              </p>
+
+              <span class="Status badge badge-outline mt-2">Not Applied</span>
+
+              <p class="text-gray-600 mt-3 text-sm">
+                Create stunning web experiences for high-profile clients. Must
+                have portfolio and experience with modern web design trends.
+              </p>
+
+              <div class="flex gap-3 mt-4">
+                <button class="interview btn btn-sm btn-success btn-outline">
+                  Interview
+                </button>
+                <button class="reject btn btn-sm btn-error btn-outline">
+                  Rejected
+                </button>
+              </div>
+            </div>
+
+            <div class="flex items-start">
+              <button class="delete btn btn-circle btn-outline">
+                <i class="delete fa-solid fa-trash"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Job Card-3 -->
+          <div
+            id="job-card"
+            class="Card bg-white p-6 rounded-xl shadow border mb-6 flex justify-between"
+          >
+            <div>
+              <h3 class="text-lg font-semibold">DataViz Solutions</h3>
+              <p class="text-gray-600">Data Visualization Specialist</p>
+
+              <p class="text-sm text-gray-500 mt-1">
+                khulna, Full-time , $125,000 - $165,000
+              </p>
+
+              <span class="Status badge badge-outline mt-2">Not Applied</span>
+
+              <p class="text-gray-600 mt-3 text-sm">
+                Transform complex data into compelling visualizations using
+                D3.js and React. Strong analytical thinking required.
+              </p>
+
+              <div class="flex gap-3 mt-4">
+                <button class="interview btn btn-sm btn-success btn-outline">
+                  Interview
+                </button>
+                <button class="reject btn btn-sm btn-error btn-outline">
+                  Rejected
+                </button>
+              </div>
+            </div>
+
+            <div class="flex items-start">
+              <button class="delete btn btn-circle btn-outline">
+                <i class="delete fa-solid fa-trash"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Job Card-4 -->
+          <div
+            id="job-card"
+            class="Card bg-white p-6 rounded-xl shadow border mb-6 flex justify-between"
+          >
+            <div>
+              <h3 class="text-lg font-semibold">CloudFirst Inc</h3>
+              <p class="text-gray-600">Backend Developer</p>
+
+              <p class="text-sm text-gray-500 mt-1">
+                Kandirpar, Cumilla, Full-time , $140,000 - $190,000
+              </p>
+
+              <span class="Status badge badge-outline mt-2">Not Applied</span>
+
+              <p class="text-gray-600 mt-3 text-sm">
+                Design scalable backend systems using Python and AWS. Work with
+                modern DevOps practices and cloud infrastructure.
+              </p>
+
+              <div class="flex gap-3 mt-4">
+                <button class="interview btn btn-sm btn-success btn-outline">
+                  Interview
+                </button>
+                <button class="reject btn btn-sm btn-error btn-outline">
+                  Rejected
+                </button>
+              </div>
+            </div>
+
+            <div class="flex items-start">
+              <button class="delete btn btn-circle btn-outline">
+                <i class="delete fa-solid fa-trash"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Job Card-5 -->
+          <div
+            id="job-card"
+            class="Card bg-white p-6 rounded-xl shadow border mb-6 flex justify-between"
+          >
+            <div>
+              <h3 class="text-lg font-semibold">Innovation Labs</h3>
+              <p class="text-gray-600">UI/UX Engineer</p>
+
+              <p class="text-sm text-gray-500 mt-1">
+                Shundarbans, Full-time , $110,000 - $150,000
+              </p>
+
+              <span class="Status badge badge-outline mt-2">Not Applied</span>
+
+              <p class="text-gray-600 mt-3 text-sm">
+                Create beautiful and functional interfaces for product suites.
+                Strong design sense and frontend development experience
+                required.
+              </p>
+
+              <div class="flex gap-3 mt-4">
+                <button class="interview btn btn-sm btn-success btn-outline">
+                  Interview
+                </button>
+                <button class="reject btn btn-sm btn-error btn-outline">
+                  Rejected
+                </button>
+              </div>
+            </div>
+
+            <div class="flex items-start">
+              <button class="delete btn btn-circle btn-outline">
+                <i class="delete fa-solid fa-trash"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Job Card-6  -->
+          <div
+            id="job-card"
+            class="Card bg-white p-6 rounded-xl shadow border mb-6 flex justify-between"
+          >
+            <div>
+              <h3 class="text-lg font-semibold">PixelCraft Studio</h3>
+              <p class="text-gray-600">Frontend Developer</p>
+
+              <p class="text-sm text-gray-500 mt-1">
+                Cox's bazar, Full-time , $90,000 - $130,000
+              </p>
+
+              <span class="Status badge badge-outline mt-2">Not Applied</span>
+
+              <p class="text-gray-600 mt-3 text-sm">
+                Develop responsive and interactive UI using React and Tailwind
+                CSS. Collaborate with designers to build modern web apps.
+              </p>
+
+              <div class="flex gap-3 mt-4">
+                <button class="interview btn btn-sm btn-success btn-outline">
+                  Interview
+                </button>
+                <button class="reject btn btn-sm btn-error btn-outline">
+                  Rejected
+                </button>
+              </div>
+            </div>
+
+            <div class="flex items-start">
+              <button class="delete btn btn-circle btn-outline">
+                <i class="delete fa-solid fa-trash"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Job Card-7 -->
+          <div
+            id="job-card"
+            class="Card bg-white p-6 rounded-xl shadow border mb-6 flex justify-between"
+          >
+            <div>
+              <h3 class="text-lg font-semibold">NextGen Tech</h3>
+              <p class="text-gray-600">Junior Web Developer</p>
+
+              <p class="text-sm text-gray-500 mt-1">
+                Sylhet, Remote , $70,000 - $100,000
+              </p>
+
+              <span class="Status badge badge-outline mt-2">Not Applied</span>
+
+              <p class="text-gray-600 mt-3 text-sm">
+                Work on modern web applications using JavaScript, HTML, and CSS.
+                Great opportunity for junior developers to grow their career.
+              </p>
+
+              <div class="flex gap-3 mt-4">
+                <button class="interview btn btn-sm btn-success btn-outline">
+                  Interview
+                </button>
+                <button class="reject btn btn-sm btn-error btn-outline">
+                  Rejected
+                </button>
+              </div>
+            </div>
+
+            <div class="flex items-start">
+              <button class="delete btn btn-circle btn-outline">
+                <i class="delete fa-solid fa-trash"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Job Card-8  -->
+          <div
+            id="job-card"
+            class="Card bg-white p-6 rounded-xl shadow border mb-6 flex justify-between"
+          >
+            <div>
+              <h3 class="text-lg font-semibold">QuantumSoft Ltd</h3>
+              <p class="text-gray-600">Full Stack Web Developer</p>
+
+              <p class="text-sm text-gray-500 mt-1">
+                Bogura , $120,000 - $160,000
+              </p>
+
+              <span class="Status badge badge-outline mt-2">Not Applied</span>
+
+              <p class="text-gray-600 mt-3 text-sm">
+                Build scalable web applications using JavaScript, Node.js and
+                modern frameworks. Collaborate with global teams to deliver high
+                quality software products.
+              </p>
+
+              <div class="flex gap-3 mt-4">
+                <button class="interview btn btn-sm btn-success btn-outline">
+                  Interview
+                </button>
+                <button class="reject btn btn-sm btn-error btn-outline">
+                  Rejected
+                </button>
+              </div>
+            </div>
+
+            <div class="flex items-start">
+              <button class="delete btn btn-circle btn-outline">
+                <i class="delete fa-solid fa-trash"></i>
+              </button>
+            </div>
           </div>
         </div>
-        
-      </div>
-      <!-- Interview-container -->
-        <section class="hidden" id="interview-container">
-          
-        </section>
+        <!-- Interview-container -->
+        <section class="hidden" id="interview-container"></section>
         <!-- Reject-container -->
         <section class="hidden" id="reject-container"></section>
         <!-- No Jobs Available -->
-        <div id="no-jobs" class="hidden bg-gray-200 p-11 rounded-xl shadow  text-center">
+        <div
+          id="no-jobs"
+          class="hidden bg-gray-200 p-11 rounded-xl shadow text-center"
+        >
           <div class="mt-2 max-w-30 mx-auto">
-            <img src="./img/jobs.png" alt="">
+            <img src="./img/jobs.png" alt="" />
           </div>
           <p class="text-gray-500 text-lg font-semibold">No Jobs Available</p>
-          <p class="text-gray-400 text-lg font-semibold">Check back soon for new job opportunities</p>
+          <p class="text-gray-400 text-lg font-semibold">
+            Check back soon for new job opportunities
+          </p>
         </div>
-
       </main>
     </div>
   </body>
