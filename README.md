@@ -1,23 +1,13 @@
-Job Application Tracker
-
-Live Demo-
-https://habibur-rahman-sunny.github.io/Job-application-tracker/
-
 Project Overview-
-A web application to track job applications with status filters (All, Interview, Rejected) and analytics. Built using JavaScript and DOM manipulation for dynamic UI updates.
+A web application to track job applications with status filters (All, Interview, Rejected) and analytics. Built using Vanilla JavaScript and DOM manipulation for dynamic UI updates.
 
 --
 
 Technologies Used-
 
 HTML5
-CSS3
-JavaScript 
-(ES6+)  
 Tailwind CSS
-DaisyUI  
-Font Awesome
-Google Fonts  
+Vanilla-JavaScript 
 
 --
 
